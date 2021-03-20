@@ -1,0 +1,15 @@
+app-id: org.openmusickontrollers.patchmatrix
+runtime: org.freedesktop.Platform
+runtime-version: '20.08'
+sdk: org.freedesktop.Sdk
+command: patchmatrix
+modules:
+  - shared-modules/glew/glew.json
+  - shared-modules/linux-audio/lv2.json
+  - shared-modules/linux-audio/jack2.json
+  - name: patchmatrix
+    buildsystem: meson
+    sources:
+      - type: git
+        url: https://github.com/OpenMusicKontrollers/patchmatrix
+        tag: "0.22.0"
