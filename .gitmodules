@@ -1,0 +1,3 @@
+[submodule "patchmatrix/shared-modules"]
+	path = patchmatrix/shared-modules
+	url = https://github.com/flathub/shared-modules
