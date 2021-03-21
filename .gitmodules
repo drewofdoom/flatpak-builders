@@ -1,3 +1,9 @@
 [submodule "patchmatrix/shared-modules"]
 	path = patchmatrix/shared-modules
 	url = https://github.com/flathub/shared-modules
+[submodule "catia/shared-modules"]
+	path = catia/shared-modules
+	url = https://github.com/flathub/shared-modules
+[submodule "sonosbus/shared-modules"]
+	path = sonosbus/shared-modules
+	url = https://github.com/flathub/shared-modules
