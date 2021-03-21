@@ -1,15 +1,14 @@
 app-id: org.SonoBus.standalone
 runtime: org.freedesktop.Platform
-runtime-version: '20.08'
+runtime-version: '19.08'
 sdk: org.freedesktop.Sdk
 command: SonoBus
 modules:
+  - shared-modules/linux-audio/jack2.json
   - name: SonoBus
     buildsystem: simple
     build-commands:
-      - cd Builds/LinuxMakefile
-      - CONFIG=Release make -j2 Standalone
-      - ./install.sh
+      - make -j2 -f Builds/LinuxMakefile/Makefile Standalone CONFIG=Release
     sources:
       - type: git
         url: https://github.com/essej/sonobus
